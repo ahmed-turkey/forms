@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Demo form</h1>
+    </header>
+    <main>
+      <!-- <form action=""></form> -->
+      <form action="/" method="get">
+        <!-- boolean attribute dont need value -->
+        <section>
+          <h2>your personal details</h2>
+          <ul>
+            <li>
+              <label for="username">your name </label>
+              <!-- label for the id of the input  -->
+              <input
+                id="username"
+                type="name"
+                name="user-name"
+                required
+                placeholder="ahmed turkey"
+              />
+            </li>
+            <li>
+              <label for="useremail">your email address </label>
+              <!-- label for the id of the input  -->
+              <input id="useremail" type="email" name="user-emaile" />
+            </li>
+
+            <li>
+              <label for="userpassword"> your password </label>
+              <input
+                id="userpassword"
+                type="password"
+                name="user-password"
+                required
+                minlength="6"
+              />
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2>more details</h2>
+          <ul>
+            <li>
+              <label for="birthdate"> your birthdate </label>
+              <input
+                id="birthdate"
+                type="date"
+                name="user-birthdate"
+                required
+                min="1996-01-01"
+                max="2000-01-01"
+              />
+            </li>
+            <li>
+              <label for="userage">YOR AGE</label>
+              <input
+                id="userage"
+                type="number"
+                step="10"
+                name="user-age"
+                required
+                min="18"
+                max="45"
+              />
+              <!-- what is the important of input name attribute?? -->
+            </li>
+            <li>
+              <label for="favorite-color">your favorite color</label>
+              <select name="color" id="favorite-color">
+                <option>blue</option>
+                <!-- if i didn't identify a specific value for option element it will simply takes the text inside the element as a value -->
+                <option value="black">my favorite color is black</option>
+                <option value="red">my favorite color is red</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+        <section></section>
+        <section>
+          <h2>how should we verify your account ?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                id="message"
+                type="radio"
+                name="verify"
+                value="text-message"
+              />
+              <label for="message"> via text message (SMS)</label>
+            </li>
+            <li class="form-control-inline">
+              <input id="phone-call" type="radio" name="verify" value="phone" />
+              <label for="phone-call">via phone call</label>
+            </li>
+            <li class="form-control-inline">
+              <input id="email" type="radio" name="verify" value="email" />
+              <label for="email"> via email</label>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section>
+          <h2>how should we contact you ?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                id="contact-via-phone"
+                type="checkbox"
+                name="contact"
+                value="phone"
+              />
+              <label for="contact-via-phone">contact via phone ?</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                id="contact-via-email"
+                type="checkbox"
+                name="contact"
+                value="email"
+              />
+              <label for="contact-via-email">contact via email ?</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="form-control-inline">
+            <input id="agree-terms" type="checkbox" name="terms" />
+            <label for="agree-terms">agree to terms ?</label>
+          </div>
+        </section>
+        <section>
+          <label for="usermessage">your message </label>
+          <!-- label for the id of the input  -->
+          <textarea 
+            name="user-message"
+            id="usermessage"
+            cols="1"
+            rows="5"
+          ></textarea>
+        </section>
+        <hr />
+        <section>
+          <button type="reset">clear</button>
+          <button type="submit">submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

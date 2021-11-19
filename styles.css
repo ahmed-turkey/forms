@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(245, 245, 245);
+  margin: 8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+h1 {
+    text-align: center;
+    color: black;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ form {
+  width: 32rem;
+  margin: 3rem auto;
+  background-color:rgb(245, 245, 245);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgb(138, 137, 137);
+}
+label {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+
+input, textarea,select{
+  width: 100%;
+  height: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid rgb(112, 112, 112);
+  padding: 0.5rem;
+  color: rgb(68, 67, 67);  
+  border-radius: 6px;
+  /* box-shadow: 0.2rem 0.2rem 0.5rem rgb(138, 137, 137); */
+}
+input:focus, textarea:focus {
+  background-color: rgb(168, 214, 228);
+  color: rgb(37, 41, 41);
+  border-color: rgb(12, 141, 192);
+}
+
+input:focus-visible {
+  outline: none;
+}
+textarea{
+    resize: vertical;
+}
+button {
+  display: block;
+  width: 7rem;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  font: inherit;
+  color: white;
+  background-color: rgb(35, 149, 241);
+  border: 0.2rem solid rgb(35, 149, 241);
+  padding: 0.4 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.form-control-inline {
+  display: flex;
+}
+.form-control-inline input {
+  width: auto;
+  margin-right: 0.8rem;
+}
